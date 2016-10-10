@@ -1,9 +1,9 @@
 # -*- Makefile -*-
 # Copyright 2010,  Georgia Institute of Technology, USA.
 # See COPYING for license.
-BUILD_OPENMP = No
+BUILD_OPENMP = Yes
 BUILD_XMT = No
-include make.inc-osx
+include make-incs/make.inc-gcc
 
 GRAPH500_SOURCES=graph500.c options.c rmat.c kronecker.c verify.c prng.c \
 	xalloc.c timer.c 
